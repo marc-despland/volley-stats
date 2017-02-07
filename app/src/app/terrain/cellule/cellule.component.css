@@ -1,0 +1,8 @@
+.cellule {
+	width: 4%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+	background-color: #440044;
+	display: inline-block;
+}

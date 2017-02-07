@@ -1,0 +1,12 @@
+<div class="side">
+	<out [position]="'top'"></out>
+	<div class="middle" *ngIf="left"><!--
+		--><out [position]="'left'"></out><!--
+		--><playground [side]="'left'"></playground><!--
+--></div>
+	<div class="middle" *ngIf="!left"><!--
+		--><playground [side]="'right'"></playground><!--
+		--><out [position]="'right'"></out><!--
+--></div>
+	<out  [position]="'bottom'"></out>
+</div>
