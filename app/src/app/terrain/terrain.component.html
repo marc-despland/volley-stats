@@ -1,3 +1,4 @@
-<div class="terrain">
-<side [left]="true"></side><side [left]="false"></side>
+<div class="terrain" >
+<!--<side [left]="true"></side><side [left]="false"></side>-->
+	<cellule *ngFor="let case of cases" [case]="case" (touched)="touched($event)"></cellule>
 </div>

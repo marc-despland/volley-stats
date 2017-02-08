@@ -1,8 +1,51 @@
 .cellule {
-	width: 4%;
-    height: 100%;
+	width: 5%;
+    height: 10%;
     margin: 0px;
     padding: 0px;
 	background-color: #440044;
 	display: inline-block;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.bright {
+	border-right-color: #0000FF;
+	border-right-width: 4px;
+	border-right-style: solid;
+}
+
+.bleft {
+	border-left-color: #0000FF;
+	border-left-width: 4px;
+	border-left-style: solid;
+}
+
+.btop {
+	border-top-color: #0000FF;
+	border-top-width: 4px;
+	border-top-style: solid;
+}
+
+.bbottom {
+	border-bottom-color: #0000FF;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+}
+
+.out {
+	background-color: #440000;
+}
+
+.in {
+	background-color: #004400;
+}
+
+.selected-out {
+	background-color: #FF0000;
+}
+
+.selected-in {
+	background-color: #00FF00;
 }
