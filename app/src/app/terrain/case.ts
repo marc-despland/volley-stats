@@ -13,6 +13,7 @@ export class Case {
 	border_left: boolean;
 	border_right: boolean;
 	selected: boolean;
+	label: string;
 
 	constructor(index:number, side:Sides, zone: Zones, bup: boolean, bdown: boolean, bleft: boolean, bright: boolean) {
 		this.index=index;
@@ -23,6 +24,25 @@ export class Case {
 		this.border_left=bleft;
 		this.border_right=bright;
 		this.selected=false;
+		this.label="";
 
 	}
+
+	add(i:number){
+		if (this.label=="") {
+			this.label+=i;
+		} else {
+			this.label+=" "+i;
+		}
+	}
+
+	clear() {
+		this.label="";
+		this.selected=false;
+	}
+
+	out():boolean {
+  		return ((this.zone==Zones.BOTTOM) || (this.zone==Zones.TOP) || (this.zone==Zones.RIGHT) || (this.zone==Zones.LEFT));
+  	}
+
 }

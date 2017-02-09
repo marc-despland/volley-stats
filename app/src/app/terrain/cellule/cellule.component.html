@@ -1,3 +1,5 @@
 <div (click)="clickit()" [ngClass]="{'cellule': true, 'btop' : case.border_up, 'bbottom' : case.border_down,'bleft' : case.border_left, 'bright' : case.border_right, 'out': out(), 'selected-in': selected_in(), 'selected-out': selected_out(), 'in': in()}" >
-	{{case.index}}
+	
+
+	<div class="parent"><div class="center">{{case.label}}</div></div>
 </div>
