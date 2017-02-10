@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Case, Sides, Zones }  from './case';
-import { Team }  from './team';
+import { Case, Sides, Zones }  from '../model/case';
+import { Team }  from '../model/team';
 
 @Component({
   selector: 'terrain',

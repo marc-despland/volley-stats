@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Case, Sides, Zones }  from '../case';
+import { Case, Sides, Zones }  from '../../model/case';
 
 @Component({
   selector: 'cellule',
